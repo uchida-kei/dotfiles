@@ -9,3 +9,5 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 export LANG=ja_JP.UTF-8
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 export RUST_BACKTRACE=1
+export LDFLAGS="-L/usr/local/opt/openblas/lib"
+export CPPFLAGS="-I/usr/local/opt/openblas/include"
