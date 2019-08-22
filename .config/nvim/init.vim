@@ -18,6 +18,12 @@ set nowritebackup
 set noswapfile
 " 編集中のファイルが変更されたら自動で読み直す
 set autoread
+"Tab, 改行の可視化
+set list
+"set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+"set lcs=tab:>-,trail:-
+"set lcs=tab:>-,eol:<,nbsp:%
+"set lcs=extends:>,precedes:<
 "set list listchars=tab:|_
 set nolist
 " Tab文字を半角スペースにする
@@ -43,8 +49,14 @@ endif
 if has('nvim')
 	set termguicolors
 endif
+"Use nightly rustfmt in all versions
+let g:rustfmt_command = 'rustup run nightly rustfmt'
+"Auto format when saving 
 let g:rustfmt_autosave = 1
+
 set hidden
+
+"Auto complete command path
 let g:racer_cmd = "~/.cargo/bin/racer"
 
 
