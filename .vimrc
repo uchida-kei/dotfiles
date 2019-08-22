@@ -25,5 +25,4 @@ set tabstop=4
 " 行頭でのTab文字の表示幅
 set shiftwidth=4
 "クリップボードを他のアプリと共有
-set clipboard+=unnamedplus
-
+set clipboard=unnamed
