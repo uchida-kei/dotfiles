@@ -32,4 +32,3 @@ done
 code --list-extensions > $SCRIPT_DIR/.vscode/extensions_list
 
 echo "Deploy vscode setting complete"
-
