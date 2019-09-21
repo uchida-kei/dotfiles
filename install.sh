@@ -1,12 +1,14 @@
 #!/bin/bash
 
-for f in .??*
-do
-	[[ "$f" == ".git" ]] && continue
-	[[ "$f" == ".gitignore" ]] && continue
-	[[ "$f" == ".DS_Store" ]] && continue
+SCRIPT_DIR=$(cd $(dirname $0) && pwd)
 
-	ln -sf ~/dotfiles/$f ~/
+for f in $SCRIPT_DIR/.??*
+do
+	[[ "$f" == "$SCRIPT_DIR/.git" ]] && continue
+	[[ "$f" == "$SCRIPT_DIR/.gitignore" ]] && continue
+	[[ "$f" == "$SCRIPT_DIR/.DS_Store" ]] && continue
+
+	ln -sf $f ~/
 	
 	echo "Deploy $f complete"
 	
