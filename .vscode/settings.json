@@ -7,7 +7,7 @@
     "typescript",
     "typescriptreact"
     ],
-    "editor.fontSize": 18,
+    "editor.fontSize": 17,
     "git.autofetch": true,
     "eslint.packageManager": "yarn"
 }
