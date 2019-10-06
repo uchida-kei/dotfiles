@@ -56,11 +56,6 @@ let g:rustfmt_autosave = 1
 
 set hidden
 
-"Auto complete command path
-let g:racer_cmd = "~/.cargo/bin/racer"
-
-
-
 if &compatible
 	set nocompatible
 endif
