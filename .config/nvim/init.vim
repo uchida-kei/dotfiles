@@ -50,11 +50,24 @@ if has('nvim')
 	set termguicolors
 endif
 "Use nightly rustfmt in all versions
-let g:rustfmt_command = 'rustup run nightly rustfmt'
+"let g:rustfmt_command = 'rustup run nightly-2018-12-27 rustfmt'
 "Auto format when saving 
-let g:rustfmt_autosave = 1
+"let g:rustfmt_autosave = 1
 
 set hidden
+
+function! s:clang_format()
+  let now_line = line(".")
+  exec ":%! clang-format"
+  exec ":" . now_line
+endfunction
+
+if executable('clang-format')
+  augroup cpp_clang_format
+    autocmd!
+    autocmd BufWrite,FileWritePre,FileAppendPre *.[ch]pp call s:clang_format()
+  augroup END
+endif
 
 if &compatible
 	set nocompatible
