@@ -18,10 +18,13 @@ hook_add = '''
 	let g:LanguageClient_serverCommands = {
         \ 'c': ['clangd', '-compile-commands-dir=' . getcwd() . '/build'],
         \ 'cpp': ['clangd', '-compile-commands-dir=' . getcwd() . '/build'],
+		\ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ }
 	let g:LanguageClient_hasSnippetSupport = 0
 
 	set completefunc=LanguageClient#complete
 
-    nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>	
+    nnoremap K :call LanguageClient#textDocument_hover()<CR>
+    nnoremap F :call LanguageClient#textDocument_formatting()<CR>
+	
 '''
