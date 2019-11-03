@@ -49,10 +49,6 @@ endif
 if has('nvim')
 	set termguicolors
 endif
-"Use nightly rustfmt in all versions
-"let g:rustfmt_command = 'rustup run nightly-2018-12-27 rustfmt'
-"Auto format when saving 
-"let g:rustfmt_autosave = 1
 
 set hidden
 
