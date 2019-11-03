@@ -12,3 +12,7 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 export LANG=ja_JP.UTF-8
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 export RUST_BACKTRACE=1
+export JAVA_HOME=`/usr/libexec/java_home -v "13"`
+export PATH="$JAVA_HOME/bin:$PATH"
+
+
