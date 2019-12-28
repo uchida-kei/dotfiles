@@ -3,3 +3,4 @@
 /.config/configstore
 /.config/yarn
 /.config/nvim/.netrwhist
+*.log
