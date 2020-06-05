@@ -26,3 +26,25 @@ set tabstop=4
 set shiftwidth=4
 "クリップボードを他のアプリと共有
 set clipboard=unnamed
+
+set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
+
+if dein#load_state('~/.vim/bundles')
+	call dein#begin('~/.vim/bundles')
+
+	call dein#load_toml('~/.vim/dein.toml', {'lazy': 0})
+	call dein#load_toml('~/.vim/deinlazy.toml', {'lazy' : 1})
+
+	call dein#end()
+	call dein#save_state()
+endif
+
+"color scheme
+colorscheme iceberg
+
+
+if !has('vim_starting') && dein#check_install()
+  " Installation check.
+  call dein#install()
+endif
+

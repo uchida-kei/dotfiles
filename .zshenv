@@ -7,6 +7,7 @@ export PATH="$HOME/.nodebrew/current/bin:$PATH"
 export PATH="$HOME/.bazel/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="$HOME/.roswell/bin:$PATH"
 export XDG_CONFIG_HOME=$HOME/.config
 export ZPLUG_HOME=/usr/local/opt/zplug
 export LANG=ja_JP.UTF-8

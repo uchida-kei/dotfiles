@@ -1,5 +1,4 @@
 {
-    "eslint.autoFixOnSave": true,
     "eslint.enable": true,
     "eslint.validate": [
     "javascript",
@@ -9,5 +8,10 @@
     ],
     "editor.fontSize": 17,
     "git.autofetch": true,
-    "eslint.packageManager": "yarn"
+    "eslint.packageManager": "yarn",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }

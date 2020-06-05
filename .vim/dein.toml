@@ -28,3 +28,6 @@ hook_add = '''
     nnoremap F :call LanguageClient#textDocument_formatting()<CR>
 	
 '''
+
+[[plugins]]
+repo = 'vim/killersheep'

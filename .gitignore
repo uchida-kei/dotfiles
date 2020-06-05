@@ -3,4 +3,7 @@
 /.config/configstore
 /.config/yarn
 /.config/nvim/.netrwhist
+/.config/NuGet
+/.config/stetic
+/.config/xbuild
 *.log
